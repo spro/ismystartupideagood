@@ -1,3 +1,3 @@
 # is my startup idea good
 
-maybe you should check on http://ismystartupidea.com/
+maybe you should check on http://ismystartupideagood.com/
