@@ -1,9 +1,9 @@
 MIN_LENGTH = 30
 
 validate = (idea, cb) ->
-    valid = true
+    err = null
     if idea.length < MIN_LENGTH
-        valid = false
-    cb null, valid
+        err = 'please enter a full idea description'
+    cb err, !err?
 
 module.exports = validate

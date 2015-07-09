@@ -17,8 +17,8 @@ app.post '/', (req, res) ->
             analyze idea, (err, response) ->
                 res.render 'response', {idea, response}
         else
-            error = 'please enter a realistic idea'
-            res.render 'error', {idea, error}
+            err ||= 'please enter a realistic idea'
+            res.render 'index', {idea, err}
 
 app.start()
 
