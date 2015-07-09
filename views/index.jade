@@ -1,5 +1,13 @@
-h1 is my startup idea good
-form(method='post')
-    textarea(name='idea', placeholder='enter your startup idea in a few words, e.g. "#{fake_idea}"')
-    button#analyze analyze
-script(src='/js/base.js')
+extends base
+block content
+    form(method='post')
+        if err
+            textarea(name='idea', placeholder='enter your startup idea')= idea
+        else
+            textarea(name='idea', placeholder='enter your startup idea in a few words, e.g. "#{fake_idea}"')
+        button#analyze analyze
+    if err
+        strong error
+        p.error= err
+        a(href='/') start over
+    script(src='/js/base.js')
