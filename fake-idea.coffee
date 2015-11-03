@@ -11,6 +11,6 @@ impacts = ["revolutionize", "disrupt", "create competition for", "shock", "make 
 groups = ["the tech industry", "Silicon Valley", "Palo Alto", "the Google campus", "the NASDAQ", "the startup scene", "the Austin tech scene", "the New York tech scene", "the American economy", "the Internet", "the TechCrunch comment section", "the way we use computers"]
 
 fakeIdea = ->
-    "#{r impacts} #{r groups} with #{r companies} for #{r customers}"
+    "#{r companies} for #{r customers}"
 
 module.exports = fakeIdea
